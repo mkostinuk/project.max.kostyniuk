@@ -12,7 +12,6 @@ public class Combination {
 	private String filepath;
 	private int key;
 
-
 	public Combination(String args[]) {
 		try {
 			this.command = args[0];

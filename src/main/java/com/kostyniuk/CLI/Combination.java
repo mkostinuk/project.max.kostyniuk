@@ -29,9 +29,9 @@ public class Combination {
 		Scanner scanner=new Scanner(System.in);
 		System.out.println("Please, write command : ENCRYPT/DECRYPT/BRUTE_FORCE");
 		this.command=scanner.nextLine();
-		System.out.println("file path?");
+		System.out.println("Please a way to file?");
 		this.filepath=scanner.nextLine();
-		System.out.println("whats key?");
+		System.out.println("Key?");
 		this.key=scanner.nextInt();
 	}
 	public    void connecting() {

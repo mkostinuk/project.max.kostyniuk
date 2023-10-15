@@ -1,5 +1,5 @@
 package com.kostyniuk.CLI;
-import com.kostyniuk.Crypt.BRUTE_FORCE;
+import com.kostyniuk.Crypt.BruteforceDecrypt;
 import com.kostyniuk.Crypt.CaesarCipher;
 import com.kostyniuk.FileWorking.CreatingFiles;
 import com.kostyniuk.FileWorking.FileRead;
@@ -46,9 +46,8 @@ public class Combination {
 
 		}
 		else if ("BRUTE_FORCE".equalsIgnoreCase(command)) {
-			BRUTE_FORCE bruteForce=new BRUTE_FORCE(filepath);
-			bruteForce.bruteForceDecrypt();
-
+			BruteforceDecrypt bruteforceDecrypt=new BruteforceDecrypt(fileRead.read());
+			WritingFile.writeToFile(bruteforceDecrypt.bruteForceEng(), CreatingFiles.getFilePlaceBruteForce(newFilePlace));
 		}
 	}
 

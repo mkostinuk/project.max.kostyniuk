@@ -1,14 +1,4 @@
+* What happened *: It turned out to implement a program that can encrypt/decrypt, the text is written in English or Ukrainian by the key, and has a key selection method that creates all decryption options
+* What could NOT be done from the basic requirements *: It was not possible to make it possible to call Bruteforce without adding a key, and the class itself was not very successful
 
-*Що вийшло зробити*:
-Вийшло реалізувати програму, яка може шифрувати/дешифрувати, текст написаний
-англійською чи українською мовами за ключем, та має метод підбору ключів, який створює всі варіанти дешифрування
-
-*Що НЕ вийшло зробити з основних вимог*:
-Не вийшло зробити можливість виклику Bruteforce без додавання ключа, та й сам клас вийшов не дуже вдалим
-
-
-*Особливості проекту*:
-Вся система шифрування і дешифрування побудована на char масиві, файл зчитується і передається символьний масив,
-потім передає його до основного алгоритму шифрування/дешифрування і в кінці створює новий файл в якому записує оброблений
-масив. Також тут використовується інкапсуляція за для того, щоб зберегти цілісність данних, та оброблені більшість можливих
-помилок, блоком try-catch.
+* Features of the project *: The entire encryption and decryption system is built on a char array, the file is read and transferred to a character array, then passes it to the main encryption/decryption algorithm and at the end creates a new file in which it writes the processed array. It also uses encapsulation behind in order to preserve the integrity of the data, and handled most possible errors, by the try-catch block.
